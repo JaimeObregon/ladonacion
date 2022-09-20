@@ -1,0 +1,41 @@
+{
+  "name": "ladonacion",
+  "version": "1.0.0",
+  "description": "In 2012 the King of Spain, Juan Carlos I, transferred 65 million euros to a friend from a secret account in Switzerland. What lies actually behind this rare donation? This repository contains the full source code of the website ladonacion.es.",
+  "keywords": [
+    "dataviz",
+    "journalism",
+    "transparency",
+    "leaks",
+    "spain",
+    "datavisualization",
+    "investigative-journalism",
+    "datajournalism"
+  ],
+  "homepage": "https://github.com/JaimeObregon/ladonacion#readme",
+  "bugs": {
+    "url": "https://github.com/JaimeObregon/ladonacion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaimeObregon/ladonacion.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "Jaime Gómez-Obregón",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx snowpack build",
+    "dev": "npx snowpack dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "snowpack-plugin-imagemin": "^1.0.0",
+    "snowpack-plugin-terser": "^0.1.0",
+    "terser": "^5.6.0"
+  },
+  "devDependencies": {
+    "snowpack": "^3.0.11"
+  }
+}
