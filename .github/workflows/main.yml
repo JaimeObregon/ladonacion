@@ -1,0 +1,49 @@
+name: Deploys in production on every push to master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checks out the repository
+        uses: actions/checkout@v1
+
+      - name: Installs the dependencies
+        run: npm install && npx snowpack build && cp httpdocs/resources/ladonacion.js build/twitter/
+
+      - name: Deploys the site
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          ARGS: -rltgoDzvO --delete
+          SOURCE: "build/"
+          TARGET: ${{ secrets.REMOTE }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
+          REMOTE_PORT: ${{ secrets.PORT }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+
+      - name: Deploys the /slides directory
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          ARGS: -rltgoDzvO
+          SOURCE: "slides/"
+          TARGET: "${{ secrets.REMOTE }}/slides"
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
+          REMOTE_PORT: ${{ secrets.PORT }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+
+      - name: Deploys the launch page
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          ARGS: -rltgoDzvO --delete
+          SOURCE: "321/"
+          TARGET: ${{ secrets.REMOTE_PRELAUNCH }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
+          REMOTE_PORT: ${{ secrets.PORT }}
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
