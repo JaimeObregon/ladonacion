@@ -1,0 +1,3 @@
+ErrorDocument 404 /error.html
+Header set Access-Control-Allow-Origin "*"
+Header set Cache-Control "no-cache"

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@JaimeObregon" />
+    <meta name="twitter:creator" content="@JaimeObregon" />
+    <meta name="twitter:title" content="La donación" />
+    <meta
+      name="twitter:description"
+      content="En 2012 el rey de España, Juan Carlos I, transfiere a una amiga 65 millones de euros desde una cuenta secreta en Suiza. ¿Qué hay detrás de esta extraña donación?"
+    />
+    <meta
+      name="twitter:image"
+      content="https://321.ladonacion.es/donacion.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Una mano entrega un fajo de billetes a otra"
+    />
+    <meta
+      name="description"
+      content="En 2012 el rey de España, Juan Carlos I, transfiere a una amiga 65 millones de euros desde una cuenta secreta en Suiza. ¿Qué hay detrás de esta extraña donación?"
+    />
+    <meta name="author" content="Jaime Gómez-Obregón" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>💸 ¡Muy pronto en sus pantallas!</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <style>
+      @keyframes pulse {
+        from {
+          font-size: 1em;
+        }
+
+        to {
+          font-size: 1.15em;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        background-color: #ffd54f;
+        cursor: default;
+        user-select: none;
+      }
+
+      main {
+        margin: 0 auto;
+        padding: 0.5em;
+        text-align: center;
+        color: #333;
+      }
+
+      h1 {
+        font-weight: normal;
+      }
+
+      h1 a {
+        background: #e61c29;
+        color: white;
+        padding: 0.25em 1em;
+        text-decoration: none;
+        font-weight: bold;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      li {
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+      }
+
+      li span {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        font-variant-numeric: tabular-nums;
+      }
+
+      div {
+        position: absolute;
+        left: 50%;
+        bottom: 10vh;
+      }
+
+      audio {
+        position: relative;
+        left: -50%;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          font-size: 0.55em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>La donación</h1>
+
+      <ul>
+        <li><span id="days">—</span>días</li>
+        <li><span id="hours">—</span>horas</li>
+        <li><span id="minutes">—</span>minutos</li>
+        <li><span id="seconds">—</span>segundos</li>
+      </ul>
+    </main>
+
+    <script>
+      const minute = 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+
+      //
+      // 88
+      // 88              (╯°□°)╯︵ ┻━┻
+      // 88
+      // 88,dPPYba,   ,adPPYba,   ,adPPYba,  88,dPYba,,adPYba,
+      // 88P'    "8a a8"     "8a a8"     "8a 88P'   "88"    "8a
+      // 88       d8 8b       d8 8b       d8 88      88      88
+      // 88b,   ,a8" "8a,   ,a8" "8a,   ,a8" 88      88      88
+      // 8Y"Ybbd8"'   `"YbbdP"'   `"YbbdP"'  88      88      88
+      //
+      (async (endpoint) => {
+        const response = await fetch(endpoint);
+        const { epoch, url } = await response.json();
+
+        const interval = setInterval(() => {
+          const now = Math.round(new Date().getTime() / 1000);
+          const distance = epoch - now > 0 ? epoch - now : 0;
+
+          if (!distance) {
+            const link = `<a href="${
+              url ?? "https://ladonacion.es"
+            }">ladonacion.es</a>`;
+            document.querySelector("h1").innerHTML = link;
+            document.querySelector("audio").remove();
+            clearInterval(interval);
+          }
+
+          document.getElementById("days").innerText = Math.floor(
+            distance / day
+          );
+          document.getElementById("hours").innerText = Math.floor(
+            (distance % day) / hour
+          );
+          document.getElementById("minutes").innerText = Math.floor(
+            (distance % hour) / minute
+          );
+          document.getElementById("seconds").innerText = Math.floor(
+            distance % minute
+          );
+        }, 1000);
+      })("https://321.ladonacion.es/epoch/");
+    </script>
+  </body>
+</html>
