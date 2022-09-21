@@ -210,7 +210,6 @@ customElements.define(
       }
 
       this.config = {
-        token: window.ladonacion.mapboxToken,
         marker: '/assets/images/marker.svg',
         map: {
           container: this.shadowRoot.querySelector('div'),
@@ -269,7 +268,7 @@ customElements.define(
         },
       }
 
-      mapboxgl.accessToken = this.config.token
+      mapboxgl.accessToken = window.ladonacion.mapboxToken
       this.map = new mapboxgl.Map({ ...this.config.map })
 
       const image = new Image(55, 55)
