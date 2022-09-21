@@ -5,7 +5,11 @@ import '/assets/javascript/components/ladonacion-search.js'
 
 const site = {
   init: function (options) {
-    const { routes, popupTimeout } = options
+    const { routes, popupTimeout, mapboxToken } = options
+
+    window.ladonacion = {
+      mapboxToken,
+    }
 
     router.init(routes)
     router.dispatch(window.location.pathname)
@@ -86,7 +90,8 @@ document.querySelector('body').innerHTML += `
 `
 
 site.init({
-  popupTimeout: 1000 * 60 * 5, // 5 minutos
+  popupTimeout: 1000 * 60 * 5, // 5 minutes
+  mapboxToken: '', // Insert your Mapbox' account token here
   routes: [
     {
       page: 'portada',
