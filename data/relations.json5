@@ -1,346 +1,353 @@
 [
-    {
-        id: "parent",
-        type: "human",
-        description: "Una relación de paternidad entre dos personas.",
-        templates: {
-            direct: {
-                male: "padre de",
-                female: "madre de",
-            },
-            reverse: {
-                male: "hijo de",
-                female: "hija de",
-            },
-        },
-        subjects: ["persons"],
-        objects: ["persons"],
+  {
+    id: 'parent',
+    type: 'human',
+    description: 'Una relación de paternidad entre dos personas.',
+    templates: {
+      direct: {
+        male: 'padre de',
+        female: 'madre de',
+      },
+      reverse: {
+        male: 'hijo de',
+        female: 'hija de',
+      },
     },
-    {
-        id: "sibling",
-        type: "human",
-        description: "Dos personas que son hermanas.",
-        templates: {
-            male: "hermano de",
-            female: "hermana de",
-        },
-        subjects: ["persons"],
-        objects: ["persons"],
+    subjects: ['persons'],
+    objects: ['persons'],
+  },
+  {
+    id: 'sibling',
+    type: 'human',
+    description: 'Dos personas que son hermanas.',
+    templates: {
+      male: 'hermano de',
+      female: 'hermana de',
     },
-    {
-        id: "related_to",
-        type: "human",
-        description: "Relación de parentesco indirecto entre dos personas.",
-        templates: {
-            male: "familiar de",
-            female: "familiar de",
-        },
-        subjects: ["persons"],
-        objects: ["persons"],
+    subjects: ['persons'],
+    objects: ['persons'],
+  },
+  {
+    id: 'related_to',
+    type: 'human',
+    description: 'Relación de parentesco indirecto entre dos personas.',
+    templates: {
+      male: 'familiar de',
+      female: 'familiar de',
     },
-    {
-        id: "spouse",
-        type: "human",
-        description: "Matrimonio entre dos personas.",
-        templates: {
-            male: "marido de",
-            female: "mujer de",
-        },
-        subjects: ["persons"],
-        objects: ["persons"],
+    subjects: ['persons'],
+    objects: ['persons'],
+  },
+  {
+    id: 'spouse',
+    type: 'human',
+    description: 'Matrimonio entre dos personas.',
+    templates: {
+      male: 'marido de',
+      female: 'mujer de',
     },
-    {
-        id: "partner",
-        type: "human",
-        description: "Relación de pareja, sin haber matrimonio.",
-        templates: {
-            male: "pareja de",
-            female: "pareja de",
-        },
-        subjects: ["persons"],
-        objects: ["persons"],
+    subjects: ['persons'],
+    objects: ['persons'],
+  },
+  {
+    id: 'partner',
+    type: 'human',
+    description: 'Relación de pareja, sin haber matrimonio.',
+    templates: {
+      male: 'pareja de',
+      female: 'pareja de',
     },
-    {
-        id: "knows",
-        type: "human",
-        description: "Relación entre dos personas que se conocen.",
-        templates: {
-            male: "conoce a",
-            female: "conoce a",
-        },
-        subjects: ["persons"],
-        objects: ["persons"],
+    subjects: ['persons'],
+    objects: ['persons'],
+  },
+  {
+    id: 'knows',
+    type: 'human',
+    description: 'Relación entre dos personas que se conocen.',
+    templates: {
+      male: 'conoce a',
+      female: 'conoce a',
     },
-    {
-        id: "controls",
-        type: "business",
-        description: "Cuando una persona o sociedad controlan una sociedad, en el sentido de tener influencia y capacidad de decisión sobre ella, aunque sea indirectamente a través de intermediarios o gestores (<code>MANAGES</code>).",
-        templates: {
-            direct: {
-                male: "controla",
-                female: "controla",
-            },
-            reverse: {
-                male: "controlado por",
-                female: "controlada por",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["entities"],
+    subjects: ['persons'],
+    objects: ['persons'],
+  },
+  {
+    id: 'controls',
+    type: 'business',
+    description: 'Cuando una persona o sociedad controlan una sociedad, en el sentido de tener influencia y capacidad de decisión sobre ella, aunque sea indirectamente a través de intermediarios o gestores (<code>MANAGES</code>).',
+    templates: {
+      direct: {
+        male: 'controla',
+        female: 'controla',
+      },
+      reverse: {
+        male: 'controlado por',
+        female: 'controlada por',
+      },
     },
-    {
-        id: "manages",
-        type: "business",
-        description: "Cuando una persona administra una sociedad por cuenta de un tercero que es quien efectivamente la controla (<code>CONTROLS</code>).",
-        templates: {
-            direct: {
-                male: "administra",
-                female: "administra",
-            },
-            reverse: {
-                male: "administrada por",
-                female: "administrada por",
-            },
-        },
-        subjects: ["persons"],
-        objects: ["entities"],
+    subjects: ['persons', 'entities'],
+    objects: ['entities'],
+  },
+  {
+    id: 'manages',
+    type: 'business',
+    description: 'Cuando una persona administra una sociedad por cuenta de un tercero que es quien efectivamente la controla (<code>CONTROLS</code>).',
+    templates: {
+      direct: {
+        male: 'administra',
+        female: 'administra',
+      },
+      reverse: {
+        male: 'administrada por',
+        female: 'administrada por',
+      },
     },
-    {
-        id: "represents",
-        type: "business",
-        description: "Cuando una persona o sociedad representan a otras. Por ejemplo, un abogado o un gestor de cuentas que toman representación de sus clientes, o un delegado en una misión comercial.",
-        templates: {
-            direct: {
-                male: "representa a",
-                female: "representa a",
-            },
-            reverse: {
-                male: "representado por",
-                female: "representada por",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["persons", "entities"],
+    subjects: ['persons'],
+    objects: ['entities'],
+  },
+  {
+    id: 'represents',
+    type: 'business',
+    description: 'Cuando una persona o sociedad representan a otras. Por ejemplo, un abogado o un gestor de cuentas que toman representación de sus clientes, o un delegado en una misión comercial.',
+    templates: {
+      direct: {
+        male: 'representa a',
+        female: 'representa a',
+      },
+      reverse: {
+        male: 'representado por',
+        female: 'representada por',
+      },
     },
-    {
-        id: "beneficiary_of",
-        type: "business",
-        description: "Relación entre una fundación y sus beneficiarios.",
-        templates: {
-            direct: {
-                male: "beneficiario de",
-                female: "beneficiaria de",
-            },
-            reverse: {
-                male: "para beneficio de",
-                female: "para beneficio de",
-            },
-        },
-        subjects: ["persons"],
-        objects: ["entities"],
+    subjects: ['persons', 'entities'],
+    objects: ['persons', 'entities'],
+  },
+  {
+    id: 'beneficiary_of',
+    type: 'business',
+    description: 'Relación entre una fundación y sus beneficiarios.',
+    templates: {
+      direct: {
+        male: 'beneficiario de',
+        female: 'beneficiaria de',
+      },
+      reverse: {
+        male: 'para beneficio de',
+        female: 'para beneficio de',
+      },
     },
-    {
-        id: "has_bank_account_in",
-        type: "business",
-        description: "Cuando una persona o sociedad tiene una cuenta en una entidad financiera.",
-        templates: {
-            direct: {
-                male: "con cuenta en",
-                female: "con cuenta en",
-            },
-            reverse: {
-                male: "con cuenta de",
-                female: "con cuenta de",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["entities"],
+    subjects: ['persons'],
+    objects: ['entities'],
+  },
+  {
+    id: 'has_bank_account_in',
+    type: 'business',
+    description: 'Cuando una persona o sociedad tiene una cuenta en una entidad financiera.',
+    templates: {
+      direct: {
+        male: 'con cuenta en',
+        female: 'con cuenta en',
+      },
+      reverse: {
+        male: 'con cuenta de',
+        female: 'con cuenta de',
+      },
     },
-    {
-        id: "works_for",
-        type: "business",
-        description: "Una persona o sociedad que trabaja para otra o una sociedad.",
-        templates: {
-            direct: {
-                male: "trabaja para",
-                female: "trabaja para",
-            },
-            reverse: {
-                male: "emplea a",
-                female: "emplea a",
-            },
-        },
-        subjects: ["entities", "persons"],
-        objects: ["entities", "persons"],
+    subjects: ['persons', 'entities'],
+    objects: ['entities'],
+  },
+  {
+    id: 'works_for',
+    type: 'business',
+    description: 'Una persona o sociedad que trabaja para otra o una sociedad.',
+    templates: {
+      direct: {
+        male: 'trabaja para',
+        female: 'trabaja para',
+      },
+      reverse: {
+        male: 'emplea a',
+        female: 'emplea a',
+      },
     },
-    {
-        id: "pays",
-        type: "business",
-        description: "Modela el pago de una cantidad económica.",
-        templates: {
-            direct: {
-                male: "paga a",
-                female: "paga a",
-            },
-            reverse: {
-                male: "cobra de",
-                female: "cobra de",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["entities", "persons"],
+    subjects: ['entities', 'persons'],
+    objects: ['entities', 'persons'],
+  },
+  {
+    id: 'pays',
+    type: 'business',
+    description: 'Modela el pago de una cantidad económica.',
+    templates: {
+      direct: {
+        male: 'paga a',
+        female: 'paga a',
+      },
+      reverse: {
+        male: 'cobra de',
+        female: 'cobra de',
+      },
     },
-    {
-        id: "part_of",
-        type: "sets",
-        description: "Cuando algo es parte de un conjunto mayor.",
-        templates: {
-            direct: {
-                male: "parte de",
-                female: "parte de",
-            },
-            reverse: {
-                male: "comprende",
-                female: "comprende",
-            },
-        },
-        subjects: ["persons", "entities", "places", "documents", "events"],
-        objects: ["entities", "places", "documents", "events"],
+    subjects: ['persons', 'entities'],
+    objects: ['entities', 'persons'],
+  },
+  {
+    id: 'part_of',
+    type: 'sets',
+    description: 'Cuando algo es parte de un conjunto mayor.',
+    templates: {
+      direct: {
+        male: 'parte de',
+        female: 'parte de',
+      },
+      reverse: {
+        male: 'comprende',
+        female: 'comprende',
+      },
     },
-    {
-        id: "registered_in",
-        type: "affiliation",
-        description: "Cuando una persona o sociedad está domiciliada o registrada en un lugar.",
-        templates: {
-            direct: {
-                male: "registrado en",
-                female: "registrada en",
-            },
-            reverse: {
-                male: "domicilio de",
-                female: "domicilio de",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["places"],
+    subjects: ['persons', 'entities', 'places', 'documents', 'events'],
+    objects: ['entities', 'places', 'documents', 'events'],
+  },
+  {
+    id: 'registered_in',
+    type: 'affiliation',
+    description: 'Cuando una persona o sociedad está domiciliada o registrada en un lugar.',
+    templates: {
+      direct: {
+        male: 'registrado en',
+        female: 'registrada en',
+      },
+      reverse: {
+        male: 'domicilio de',
+        female: 'domicilio de',
+      },
     },
-    {
-        id: "member_of",
-        type: "affiliation",
-        description: "Relación entre una persona o sociedad y una organización de la que forma parte.",
-        templates: {
-            direct: {
-                male: "miembro de",
-                female: "miembro de",
-            },
-            reverse: {
-                male: "tiene como miembro a",
-                female: "tiene como miembro a",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["entities"],
+    subjects: ['persons', 'entities'],
+    objects: ['places'],
+  },
+  {
+    id: 'member_of',
+    type: 'affiliation',
+    description: 'Relación entre una persona o sociedad y una organización de la que forma parte.',
+    templates: {
+      direct: {
+        male: 'miembro de',
+        female: 'miembro de',
+      },
+      reverse: {
+        male: 'tiene como miembro a',
+        female: 'tiene como miembro a',
+      },
     },
-    {
-        id: "owns",
-        type: "property",
-        description: "Una relación de posesión o propiedad de una persona o sociedad sobre algo.",
-        templates: {
-            direct: {
-                male: "propietario de",
-                female: "propietaria de",
-            },
-            reverse: {
-                male: "propiedad de",
-                female: "propiedad de",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["entities", "places"],
+    subjects: ['persons', 'entities'],
+    objects: ['entities'],
+  },
+  {
+    id: 'owns',
+    type: 'property',
+    description: 'Una relación de posesión o propiedad de una persona o sociedad sobre algo.',
+    templates: {
+      direct: {
+        male: 'propietario de',
+        female: 'propietaria de',
+      },
+      reverse: {
+        male: 'propiedad de',
+        female: 'propiedad de',
+      },
     },
-    {
-        id: "gives",
-        type: "property",
-        description: "Cuando una persona o sociedad regala, dona o da algo, sin que exista una contrapartida directa y explícita.",
-        templates: {
-            direct: {
-                male: "dona",
-                female: "dona",
-            },
-            reverse: {
-                male: "donado por",
-                female: "donado por",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["entities", "places", "documents"],
+    subjects: ['persons', 'entities'],
+    objects: ['entities', 'places'],
+  },
+  {
+    id: 'gives',
+    type: 'property',
+    description: 'Cuando una persona o sociedad regala, dona o da algo, sin que exista una contrapartida directa y explícita.',
+    templates: {
+      direct: {
+        male: 'dona',
+        female: 'dona',
+      },
+      reverse: {
+        male: 'donado por',
+        female: 'donado por',
+      },
     },
-    {
-        id: "authors",
-        type: "documents",
-        description: "Cuando una persona o sociedad es autora de un documento. Por ejemplo, una carta o un acta.",
-        templates: {
-            direct: {
-                male: "autor de",
-                female: "autora de",
-            },
-            reverse: {
-                male: "realizado por",
-                female: "realizado por",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["documents"],
+    subjects: ['persons', 'entities'],
+    objects: ['entities', 'places', 'documents'],
+  },
+  {
+    id: 'authors',
+    type: 'documents',
+    description: 'Cuando una persona o sociedad es autora de un documento. Por ejemplo, una carta o un acta.',
+    templates: {
+      direct: {
+        male: 'autor de',
+        female: 'autora de',
+      },
+      reverse: {
+        male: 'realizado por',
+        female: 'realizado por',
+      },
     },
-    {
-        id: "mentions",
-        type: "documents",
-        description: "Cuando una noticia o un documento menciona algo.",
-        templates: {
-            direct: {
-                male: "menciona a",
-                female: "menciona a",
-            },
-            reverse: {
-                male: "mencionado por",
-                female: "mencionada por",
-            },
-        },
-        subjects: ["articles", "documents"],
-        objects: ["persons", "places", "entities", "events", "articles", "documents"],
+    subjects: ['persons', 'entities'],
+    objects: ['documents'],
+  },
+  {
+    id: 'mentions',
+    type: 'documents',
+    description: 'Cuando una noticia o un documento menciona algo.',
+    templates: {
+      direct: {
+        male: 'menciona a',
+        female: 'menciona a',
+      },
+      reverse: {
+        male: 'mencionado por',
+        female: 'mencionada por',
+      },
     },
-    {
-        id: "takes_part",
-        type: "events",
-        description: "Cuando una persona o una sociedad participan, en el sentido más amplio, en un evento.",
-        templates: {
-            direct: {
-                male: "participa en",
-                female: "participa en",
-            },
-            reverse: {
-                male: "interviene",
-                female: "interviene",
-            },
-        },
-        subjects: ["persons", "entities"],
-        objects: ["events"],
+    subjects: ['articles', 'documents'],
+    objects: [
+      'persons',
+      'places',
+      'entities',
+      'events',
+      'articles',
+      'documents',
+    ],
+  },
+  {
+    id: 'takes_part',
+    type: 'events',
+    description: 'Cuando una persona o una sociedad participan, en el sentido más amplio, en un evento.',
+    templates: {
+      direct: {
+        male: 'participa en',
+        female: 'participa en',
+      },
+      reverse: {
+        male: 'interviene',
+        female: 'interviene',
+      },
     },
-    {
-        id: "happens_in",
-        type: "events",
-        description: "Relación entre un evento, como por ejemplo una reunión, y el lugar o lugares donde sucede.",
-        templates: {
-            direct: {
-                male: "sucede en",
-                female: "sucede en",
-            },
-            reverse: {
-                male: "es donde sucede",
-                female: "es donde sucede",
-            },
-        },
-        subjects: ["events"],
-        objects: ["places"],
+    subjects: ['persons', 'entities'],
+    objects: ['events'],
+  },
+  {
+    id: 'happens_in',
+    type: 'events',
+    description: 'Relación entre un evento, como por ejemplo una reunión, y el lugar o lugares donde sucede.',
+    templates: {
+      direct: {
+        male: 'sucede en',
+        female: 'sucede en',
+      },
+      reverse: {
+        male: 'es donde sucede',
+        female: 'es donde sucede',
+      },
     },
+    subjects: ['events'],
+    objects: ['places'],
+  },
 ]

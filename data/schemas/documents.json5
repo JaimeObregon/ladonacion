@@ -1,87 +1,84 @@
 {
-    $schema: "http://json-schema.org/draft-07/schema#",
-    id: "/documents",
-    title: "Documents",
-    description: "The documents, typically PDF files",
-    type: "array",
-    items: {
-        id: "/documents/document",
-        type: "object",
-        additionalProperties: false,
-        properties: {
-            id: {
-                type: "string",
-                format: "id",
-            },
-            file: {
-                type: "string",
-                format: "file",
-            },
-            title: {
-                type: "string",
-                minLength: 1,
-            },
-            description: {
-                type: "string",
-                minLength: 1,
-            },
-            lang: {
-                $ref: "/language",
-            },
-            date: {
-                type: "string",
-                format: "date",
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  id: '/documents',
+  title: 'Documents',
+  description: 'The documents, typically PDF files',
+  type: 'array',
+  items: {
+    id: '/documents/document',
+    type: 'object',
+    additionalProperties: false,
+    properties: {
+      id: {
+        type: 'string',
+        format: 'id',
+      },
+      file: {
+        type: 'string',
+        format: 'file',
+      },
+      title: {
+        type: 'string',
+        minLength: 1,
+      },
+      description: {
+        type: 'string',
+        minLength: 1,
+      },
+      lang: {
+        $ref: '/language',
+      },
+      date: {
+        type: 'string',
+        format: 'date',
+        validate: true,
+      },
+      origin: {
+        oneOf: [
+          {
+            type: 'string',
+            format: 'reference',
+          },
+          {
+            type: 'object',
+            additionalProperties: false,
+            properties: {
+              url: {
+                $ref: '/url',
+              },
+              source: {
+                type: 'string',
+                format: 'reference',
+              },
+              comment: {
+                type: 'string',
+              },
+              date: {
+                type: 'string',
+                format: 'date',
                 validate: true,
+              },
             },
-            origin: {
-                oneOf: [
-                    {
-                        type: "string",
-                        format: "reference",
-                    },
-                    {
-                        type: "object",
-                        additionalProperties: false,
-                        properties: {
-                            url: {
-                                $ref: "/url",
-                            },
-                            source: {
-                                type: "string",
-                                format: "reference",
-                            },
-                            comment: {
-                                type: "string",
-                            },
-                            date: {
-                                type: "string",
-                                format: "date",
-                                validate: true,
-                            },
-                        },
-                        required: [
-                            "url",
-                            "source",
-                        ],
-                    },
-                ],
-            },
-            relations: {
-                type: "array",
-                items: {
-                    $ref: "/relation",
-                },
-            },
-        },
-        required: [
-            "id",
-            "file",
-            "title",
-            "description",
-            "lang",
-            "date",
-            "origin",
-            "relations",
+            required: ['url', 'source'],
+          },
         ],
+      },
+      relations: {
+        type: 'array',
+        items: {
+          $ref: '/relation',
+        },
+      },
     },
+    required: [
+      'id',
+      'file',
+      'title',
+      'description',
+      'lang',
+      'date',
+      'origin',
+      'relations',
+    ],
+  },
 }

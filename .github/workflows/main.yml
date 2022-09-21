@@ -19,7 +19,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           ARGS: -rltgoDzvO --delete
-          SOURCE: "build/"
+          SOURCE: 'build/'
           TARGET: ${{ secrets.REMOTE }}
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
@@ -30,8 +30,8 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           ARGS: -rltgoDzvO
-          SOURCE: "slides/"
-          TARGET: "${{ secrets.REMOTE }}/slides"
+          SOURCE: 'slides/'
+          TARGET: '${{ secrets.REMOTE }}/slides'
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
           REMOTE_PORT: ${{ secrets.PORT }}
@@ -41,7 +41,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           ARGS: -rltgoDzvO --delete
-          SOURCE: "321/"
+          SOURCE: '321/'
           TARGET: ${{ secrets.REMOTE_PRELAUNCH }}
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}

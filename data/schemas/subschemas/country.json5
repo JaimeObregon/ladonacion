@@ -1,8 +1,8 @@
 {
-    $schema: "http://json-schema.org/draft-07/schema#",
-    id: "/country",
-    title: "Country",
-    description: "A country code, as per ISO 3166-1",
-    type: "string",
-    pattern: "^(af|al|de|ad|ao|ai|aq|ag|sa|dz|ar|am|aw|au|at|az|be|bs|bh|bd|bb|bz|bj|bt|by|mm|bo|ba|bw|br|bn|bg|bf|bi|cv|kh|cm|ca|td|cl|cn|cy|va|co|km|cg|cd|kp|kr|ci|cr|hr|cu|cw|dk|dm|ec|eg|sv|ae|er|sk|si|es|us|ee|et|ph|fi|fj|fr|ga|gm|ge|gh|gi|gd|gr|gl|gp|gu|gt|gf|gg|gn|gq|gw|gy|ht|hn|hk|hu|in|id|ir|iq|ie|bv|im|cx|nf|is|bm|ky|cc|ck|ax|fo|gs|hm|mv|fk|mp|mh|pn|sb|tc|um|vg|vi|il|it|jm|jp|je|jo|kz|ke|kg|ki|kw|lb|la|ls|lv|lr|ly|li|lt|lu|mx|mc|mo|mk|mg|my|mw|ml|mt|ma|mq|mu|mr|yt|fm|md|mn|me|ms|mz|na|nr|np|ni|ne|ng|nu|no|nc|nz|om|nl|pk|pw|ps|pa|pg|py|pe|pf|pl|pt|pr|qa|gb|cf|cz|do|ss|re|rw|ro|ru|eh|ws|as|bl|kn|sm|mf|pm|vc|sh|lc|st|sn|rs|sc|sl|sg|sx|sy|so|lk|za|sd|se|ch|sr|sj|sz|tj|th|tw|tz|io|tf|tl|tg|tk|to|tt|tn|tm|tr|tv|ua|ug|uy|uz|vu|ve|vn|wf|ye|dj|zm|zw)$",
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  id: '/country',
+  title: 'Country',
+  description: 'A country code, as per ISO 3166-1',
+  type: 'string',
+  pattern: '^(af|al|de|ad|ao|ai|aq|ag|sa|dz|ar|am|aw|au|at|az|be|bs|bh|bd|bb|bz|bj|bt|by|mm|bo|ba|bw|br|bn|bg|bf|bi|cv|kh|cm|ca|td|cl|cn|cy|va|co|km|cg|cd|kp|kr|ci|cr|hr|cu|cw|dk|dm|ec|eg|sv|ae|er|sk|si|es|us|ee|et|ph|fi|fj|fr|ga|gm|ge|gh|gi|gd|gr|gl|gp|gu|gt|gf|gg|gn|gq|gw|gy|ht|hn|hk|hu|in|id|ir|iq|ie|bv|im|cx|nf|is|bm|ky|cc|ck|ax|fo|gs|hm|mv|fk|mp|mh|pn|sb|tc|um|vg|vi|il|it|jm|jp|je|jo|kz|ke|kg|ki|kw|lb|la|ls|lv|lr|ly|li|lt|lu|mx|mc|mo|mk|mg|my|mw|ml|mt|ma|mq|mu|mr|yt|fm|md|mn|me|ms|mz|na|nr|np|ni|ne|ng|nu|no|nc|nz|om|nl|pk|pw|ps|pa|pg|py|pe|pf|pl|pt|pr|qa|gb|cf|cz|do|ss|re|rw|ro|ru|eh|ws|as|bl|kn|sm|mf|pm|vc|sh|lc|st|sn|rs|sc|sl|sg|sx|sy|so|lk|za|sd|se|ch|sr|sj|sz|tj|th|tw|tz|io|tf|tl|tg|tk|to|tt|tn|tm|tr|tv|ua|ug|uy|uz|vu|ve|vn|wf|ye|dj|zm|zw)$',
 }

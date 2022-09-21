@@ -1,10 +1,10 @@
 {
-    $schema: "http://json-schema.org/draft-07/schema#",
-    id: "/wikipedia",
-    title: "Wikipedia",
-    description: "A link to a Wikipedia article",
-    type: "string",
-    format: "uri",
-    pattern: "^https://..\\.wikipedia.org/wiki/[-a-zA-ZñÑ0-9%._\\+~#=()]{1,256}$",
-    validate: true,
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  id: '/wikipedia',
+  title: 'Wikipedia',
+  description: 'A link to a Wikipedia article',
+  type: 'string',
+  format: 'uri',
+  pattern: '^https://..\\.wikipedia.org/wiki/[-a-zA-ZñÑ0-9%._\\+~#=()]{1,256}$',
+  validate: true,
 }

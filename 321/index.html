@@ -55,8 +55,8 @@
       body {
         display: flex;
         align-items: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
         background-color: #ffd54f;
         cursor: default;
         user-select: none;
@@ -131,9 +131,9 @@
     </main>
 
     <script>
-      const minute = 60;
-      const hour = minute * 60;
-      const day = hour * 24;
+      const minute = 60
+      const hour = minute * 60
+      const day = hour * 24
 
       //
       // 88
@@ -145,37 +145,35 @@
       // 88b,   ,a8" "8a,   ,a8" "8a,   ,a8" 88      88      88
       // 8Y"Ybbd8"'   `"YbbdP"'   `"YbbdP"'  88      88      88
       //
-      (async (endpoint) => {
-        const response = await fetch(endpoint);
-        const { epoch, url } = await response.json();
+      ;(async (endpoint) => {
+        const response = await fetch(endpoint)
+        const { epoch, url } = await response.json()
 
         const interval = setInterval(() => {
-          const now = Math.round(new Date().getTime() / 1000);
-          const distance = epoch - now > 0 ? epoch - now : 0;
+          const now = Math.round(new Date().getTime() / 1000)
+          const distance = epoch - now > 0 ? epoch - now : 0
 
           if (!distance) {
             const link = `<a href="${
-              url ?? "https://ladonacion.es"
-            }">ladonacion.es</a>`;
-            document.querySelector("h1").innerHTML = link;
-            document.querySelector("audio").remove();
-            clearInterval(interval);
+              url ?? 'https://ladonacion.es'
+            }">ladonacion.es</a>`
+            document.querySelector('h1').innerHTML = link
+            document.querySelector('audio').remove()
+            clearInterval(interval)
           }
 
-          document.getElementById("days").innerText = Math.floor(
-            distance / day
-          );
-          document.getElementById("hours").innerText = Math.floor(
+          document.getElementById('days').innerText = Math.floor(distance / day)
+          document.getElementById('hours').innerText = Math.floor(
             (distance % day) / hour
-          );
-          document.getElementById("minutes").innerText = Math.floor(
+          )
+          document.getElementById('minutes').innerText = Math.floor(
             (distance % hour) / minute
-          );
-          document.getElementById("seconds").innerText = Math.floor(
+          )
+          document.getElementById('seconds').innerText = Math.floor(
             distance % minute
-          );
-        }, 1000);
-      })("https://321.ladonacion.es/epoch/");
+          )
+        }, 1000)
+      })('https://321.ladonacion.es/epoch/')
     </script>
   </body>
 </html>

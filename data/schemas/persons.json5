@@ -1,94 +1,87 @@
 {
-    $schema: "http://json-schema.org/draft-07/schema#",
-    id: "/persons",
-    title: "Persons",
-    description: "Somebody",
-    type: "array",
-    items: {
-        id: "/persons/person",
-        type: "object",
-        additionalProperties: false,
-        properties: {
-            id: {
-                type: "string",
-                format: "id",
-            },
-            avatar: {
-                type: "string",
-                format: "file",
-            },
-            title: {
-                type: "string",
-                minLength: 1,
-            },
-            birthdate: {
-                type: "string",
-                format: "date",
-                validate: true,
-            },
-            deathdate: {
-                type: "string",
-                format: "date",
-                validate: true,
-            },
-            alias: {
-                type: "string",
-                minLength: 1,
-            },
-            description: {
-                type: "string",
-                minLength: 1,
-            },
-            gender: {
-                $ref: "/gender",
-            },
-            nationality: {
-                $ref: "/country",
-            },
-            residence: {
-                $ref: "/country",
-            },
-            wikipedia: {
-                $ref: "/wikipedia",
-            },
-            linkedin: {
-                type: "string",
-                format: "uri",
-                pattern: "^https://www\\.linkedin\\.com/in/",
-            },
-            pictures: {
-                type: "array",
-                items: {
-                    $ref: "/picture",
-                },
-            },
-            panamaPapers: {
-                $ref: "/url",
-            },
-            paradisePapers: {
-                $ref: "/url",
-            },
-            signatures: {
-                type: "array",
-                items: {
-                    $ref: "/picture",
-                },
-            },
-            names: {
-                type: "array",
-                items: {
-                    type: "string",
-                    minLength: 1,
-                },
-            },
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  id: '/persons',
+  title: 'Persons',
+  description: 'Somebody',
+  type: 'array',
+  items: {
+    id: '/persons/person',
+    type: 'object',
+    additionalProperties: false,
+    properties: {
+      id: {
+        type: 'string',
+        format: 'id',
+      },
+      avatar: {
+        type: 'string',
+        format: 'file',
+      },
+      title: {
+        type: 'string',
+        minLength: 1,
+      },
+      birthdate: {
+        type: 'string',
+        format: 'date',
+        validate: true,
+      },
+      deathdate: {
+        type: 'string',
+        format: 'date',
+        validate: true,
+      },
+      alias: {
+        type: 'string',
+        minLength: 1,
+      },
+      description: {
+        type: 'string',
+        minLength: 1,
+      },
+      gender: {
+        $ref: '/gender',
+      },
+      nationality: {
+        $ref: '/country',
+      },
+      residence: {
+        $ref: '/country',
+      },
+      wikipedia: {
+        $ref: '/wikipedia',
+      },
+      linkedin: {
+        type: 'string',
+        format: 'uri',
+        pattern: '^https://www\\.linkedin\\.com/in/',
+      },
+      pictures: {
+        type: 'array',
+        items: {
+          $ref: '/picture',
         },
-        required: [
-            "id",
-            "avatar",
-            "title",
-            "alias",
-            "description",
-            "gender",
-        ],
+      },
+      panamaPapers: {
+        $ref: '/url',
+      },
+      paradisePapers: {
+        $ref: '/url',
+      },
+      signatures: {
+        type: 'array',
+        items: {
+          $ref: '/picture',
+        },
+      },
+      names: {
+        type: 'array',
+        items: {
+          type: 'string',
+          minLength: 1,
+        },
+      },
     },
+    required: ['id', 'avatar', 'title', 'alias', 'description', 'gender'],
+  },
 }

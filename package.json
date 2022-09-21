@@ -28,6 +28,10 @@
     "dev": "npx snowpack dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",

@@ -1,99 +1,87 @@
 {
-    $schema: "http://json-schema.org/draft-07/schema#",
-    id: "/picture",
-    title: "Picture",
-    description: "A picture, as in a slideshow of several",
-    oneOf: [
-        {
-            type: "object",
-            additionalProperties: false,
-            properties: {
-                file: {
-                    type: "string",
-                    format: "file",
-                },
-                source: {
-                    oneOf: [
-                        {
-                            type: "string",
-                            format: "reference",
-                        },
-                        {
-                            type: "object",
-                            additionalProperties: false,
-                            properties: {
-                                name: {
-                                    type: "string",
-                                    minLength: 1,
-                                },
-                                link: {
-                                    type: "string",
-                                    format: "uri",
-                                },
-                            },
-                            required: [
-                                "name",
-                                "link",
-                            ],
-                            if: {
-                                properties: {
-                                    link: {
-                                        not: {
-                                            pattern: "^https://www\\.linkedin\\.com/",
-                                        },
-                                    },
-                                }
-                            },
-                            then: {
-                                properties: {
-                                    link: {
-                                        $ref: "/url",
-                                    },
-                                }
-                            },
-                        },
-                    ],
-                },
-                caption: {
-                    type: "string",
-                    minLength: 1,
-                },
-            },
-            required: [
-                "file",
-                "source",
-            ],
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  id: '/picture',
+  title: 'Picture',
+  description: 'A picture, as in a slideshow of several',
+  oneOf: [
+    {
+      type: 'object',
+      additionalProperties: false,
+      properties: {
+        file: {
+          type: 'string',
+          format: 'file',
         },
-        {
-            type: "object",
-            additionalProperties: false,
-            properties: {
-                id: {
-                    type: "string",
-                    pattern: "^\\d+$",
-                },
-                src: {
-                    type: "string",
-                    pattern: "^(https?:)?//embed\\.gettyimages\\.com/embed/\\d+",
-                },
-                width: {
-                    type: "integer",
-                },
-                height: {
-                    type: "integer",
-                },
-                caption: {
-                    type: "string",
-                    minLength: 1,
-                },
+        source: {
+          oneOf: [
+            {
+              type: 'string',
+              format: 'reference',
             },
-            required: [
-                "id",
-                "src",
-                "width",
-                "height",
-                "caption",
-            ],
+            {
+              type: 'object',
+              additionalProperties: false,
+              properties: {
+                name: {
+                  type: 'string',
+                  minLength: 1,
+                },
+                link: {
+                  type: 'string',
+                  format: 'uri',
+                },
+              },
+              required: ['name', 'link'],
+              if: {
+                properties: {
+                  link: {
+                    not: {
+                      pattern: '^https://www\\.linkedin\\.com/',
+                    },
+                  },
+                },
+              },
+              then: {
+                properties: {
+                  link: {
+                    $ref: '/url',
+                  },
+                },
+              },
+            },
+          ],
         },
-    ],
+        caption: {
+          type: 'string',
+          minLength: 1,
+        },
+      },
+      required: ['file', 'source'],
+    },
+    {
+      type: 'object',
+      additionalProperties: false,
+      properties: {
+        id: {
+          type: 'string',
+          pattern: '^\\d+$',
+        },
+        src: {
+          type: 'string',
+          pattern: '^(https?:)?//embed\\.gettyimages\\.com/embed/\\d+',
+        },
+        width: {
+          type: 'integer',
+        },
+        height: {
+          type: 'integer',
+        },
+        caption: {
+          type: 'string',
+          minLength: 1,
+        },
+      },
+      required: ['id', 'src', 'width', 'height', 'caption'],
+    },
+  ],
 }
