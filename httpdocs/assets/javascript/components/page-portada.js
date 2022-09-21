@@ -208,7 +208,7 @@ template.innerHTML = `
 
     @media (max-width: 640px) {
       h1 {
-        font-size: 1.05em;
+        font-size: 1em;
       }
     }
   </style>
