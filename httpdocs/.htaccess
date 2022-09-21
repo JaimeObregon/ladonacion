@@ -1,0 +1,15 @@
+RewriteEngine on
+ErrorDocument 404 /index.html
+
+Header set Cache-Control "no-cache"
+RewriteCond %{HTTP_USER_AGENT} Twitterbot [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /twitter/index.php [NC,L,QSA]
+
+RewriteCond %{TIME} <20210322073000
+RewriteRule ^(.*)$ https://321.ladonacion.es [L,R=302,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [NC,L,QSA]
