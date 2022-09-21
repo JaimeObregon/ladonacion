@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "cacache": "^15.0.5",
+    "capture-website": "^1.2.8",
+    "cpy": "^8.1.1",
+    "globby": "^9.2.0",
+    "gm": "^1.23.1",
+    "json5": "^2.2.0",
+    "jsonschema": "^1.4.0",
+    "mime-types": "^2.1.28",
+    "node-fetch": "^2.6.1"
+  }
+}
