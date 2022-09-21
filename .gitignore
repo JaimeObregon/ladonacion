@@ -1,5 +1,5 @@
 .DS_Store
 /build
-/node_modules
 /private
 /tmp
+node_modules
