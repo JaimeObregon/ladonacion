@@ -1,0 +1,79 @@
+{
+    $schema: "http://json-schema.org/draft-07/schema#",
+    id: "/places",
+    title: "Places",
+    description: "Objects in a map",
+    type: "array",
+    items: {
+        id: "/places/place",
+        type: "object",
+        additionalProperties: false,
+        properties: {
+            id: {
+                type: "string",
+                format: "id",
+            },
+            title: {
+                type: "string",
+                minLength: 1,
+            },
+            address: {
+                type: "string",
+                minLength: 1,
+            },
+            town: {
+                type: "string",
+                minLength: 1,
+            },
+            zip: {
+                type: "string",
+                minLength: 1,
+            },
+            description: {
+                type: "string",
+                minLength: 1,
+            },
+            country: {
+                $ref: "/country",
+            },
+            coords: {
+                type: "array",
+                minItems: 2,
+                maxItems: 2,
+                items: {
+                    type: "number",
+                },
+            },
+            zoom: {
+                type: "number",
+            },
+            google: {
+                type: "object",
+                additionalProperties: false,
+                properties: {
+                    link: {
+                        type: "string",
+                        pattern: "^https://goo\\.gl/maps/[0-9a-zA-Z]{17}$",
+                    },
+                    embed: {
+                        type: "string",
+                        pattern: "^https://www\\.google\\.com/maps/embed\\?",
+                    },
+                },
+                required: [
+                    "link",
+                    "embed",
+                ],
+            },
+        },
+        required: [
+            "id",
+            "title",
+            "description",
+            "country",
+            "coords",
+            "zoom",
+            "google",
+        ],
+    },
+}

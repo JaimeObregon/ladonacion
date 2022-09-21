@@ -48,6 +48,6 @@
 > With all its sham, drudgery and broken dreams,\
 > it is still a beautiful world.\
 > Be cheerful.\
-> Strive to be happy.\
+> Strive to be happy.
 
 —[Desiderata](https://en.wikipedia.org/wiki/Desiderata)

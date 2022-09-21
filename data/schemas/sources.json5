@@ -1,0 +1,45 @@
+{
+    $schema: "http://json-schema.org/draft-07/schema#",
+    id: "/sources",
+    title: "Sources",
+    description: "The external data sources, such as media outlets or public registries",
+    type: "array",
+    items: {
+        id: "/sources/source",
+        type: "object",
+        additionalProperties: false,
+        properties: {
+            id: {
+                type: "string",
+                format: "id",
+            },
+            name: {
+                type: "string",
+                "minLength": 1,
+            },
+            logo: {
+                type: "string",
+                format: "file",
+            },
+            avatar: {
+                type: "string",
+                format: "file",
+            },
+            country: {
+                $ref: "/country",
+            },
+            origin: {
+                type: "string",
+                format: "regex",
+            },
+        },
+        required: [
+            "id",
+            "name",
+            "logo",
+            "avatar",
+            "country",
+            "origin",
+        ],
+    },
+}

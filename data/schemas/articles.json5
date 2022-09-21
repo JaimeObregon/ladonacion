@@ -1,0 +1,60 @@
+{
+    $schema: "http://json-schema.org/draft-07/schema#",
+    id: "/articles",
+    title: "Articles",
+    description: "The articles from the media outlets",
+    type: "array",
+    items: {
+        id: "/articles/article",
+        type: "object",
+        additionalProperties: false,
+        properties: {
+            id: {
+                type: "string",
+                format: "id",
+            },
+            url: {
+                $ref: "/url",
+            },
+            source: {
+                type: "string",
+                format: "reference",
+            },
+            title: {
+                type: "string",
+                minLength: 1,
+            },
+            date: {
+                type: "string",
+                format: "date",
+                validate: true,
+            },
+            lang: {
+                $ref: "/language",
+            },
+            screenshot: {
+                type: "string",
+                format: "file",
+            },
+            thumbnail: {
+                type: "string",
+                format: "file",
+            },
+            relations: {
+                type: "array",
+                items: {
+                    $ref: "/relation",
+                },
+            },
+        },
+        required: [
+            "id",
+            "url",
+            "source",
+            "title",
+            "date",
+            "lang",
+            "relations",
+        ],
+    },
+}

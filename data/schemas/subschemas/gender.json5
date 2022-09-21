@@ -1,0 +1,8 @@
+{
+    $schema: "http://json-schema.org/draft-07/schema#",
+    id: "/gender",
+    title: "Gender",
+    description: "Gender choices for people and entities",
+    type: "string",
+    pattern: "^(fe)?male$",
+}
