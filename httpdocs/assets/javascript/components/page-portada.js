@@ -11,8 +11,8 @@ template.innerHTML = `
     }
 
     h1 {
+      display: inline-block;
       font-size: 2.15em;
-      max-width: 22em;
       line-height: 1.35;
       margin: 6em 0;
     }
@@ -22,7 +22,7 @@ template.innerHTML = `
       margin-top: 0.5em;
       margin-left: -100em;
       text-indent: 100em;
-      padding: 0.25em 0;
+      padding: .25em 1em .25em 0;
       background: var(--color-warmGray-100);
       color: var(--color-warmGray-900);
     }
@@ -205,11 +205,17 @@ template.innerHTML = `
         font-size: 1.35em;
       }
     }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 1.05em;
+      }
+    }
   </style>
   <h1>
-    En 2012 el rey de España, Juan Carlos I, transfiere a una amiga 65 millones de
-    euros desde una cuenta secreta en Suiza.
-    <br />
+    En 2012 el rey de España, Juan Carlos I,<br />
+    transfiere a una amiga 65 millones de euros<br />
+    desde una cuenta secreta en Suiza.<br />
     <strong>¿Qué hay detrás de esta extraña donación?</strong>
   </h1>
 
