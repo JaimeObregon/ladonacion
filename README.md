@@ -40,7 +40,7 @@ code and this documentation are written in English.
 
 I have gathered all of the data exclusively from public sources. Most of it
 comes from the legal proceedings, mainly in Geneve, Switzerland, leaked to and
-published by the European press. Other sources the featured in the application's
+published by the European press. Other sources featured in the application's
 extensive library ("[Biblioteca](https://ladonacion.es/biblioteca)") include:
 
 - The Panama and Paradise papers and the Bahamas Leaks, all three published by
@@ -50,7 +50,11 @@ extensive library ("[Biblioteca](https://ladonacion.es/biblioteca)") include:
 - The Spanish Royal Household itself
 
 I haver collected, analyzed and connected these documents with the help of a
-custom methodoly and tooling available under [`/bin`](/bin).
+custom methodoly and tooling available under [`/data`](/data) and
+[`/bin`](/bin). These two are not deployed, but used to validate and compile the
+final data structure consumed by the web application.
+
+# A document-driven tool for exploration
 
 This is a highly relevant and polarizing story in Spain and it has been one of
 my goals from the very beginning to approach it from a document-driven and
