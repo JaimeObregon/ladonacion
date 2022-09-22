@@ -68,15 +68,15 @@ interactive visualizations and the details around this particular story. Both
 —code and data— are separated and decoupled.
 
 This means **the application can be easily reused and adapted to power other
-stories**. It best fits one which has can be clearly expressed in the following
-four planes:
+investigations**. It best fits one which has can be clearly expressed in the
+following four planes:
 
-|                                                     |                                                                                                                          |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <img src="docs/graph.webp" width="280" alt="" />    | 1. **A network of relations between persons or business entities**. ["[Who is who](https://ladonacion.es/entramado)"]    |
-| <img src="docs/timeline.webp" width="280" alt="" /> | 2. **A sequential set of events**. ["[The facts](https://ladonacion.es/cronologia)"]                                     |
-| <img src="docs/carto.webp" width="280" alt="" />    | 3. **A geographical dimension**. ["[The places](https://ladonacion.es/mapa)"]                                            |
-| <img src="docs/docs.webp" width="280" alt="" />     | 4. **A library of documents** from which the whole story is derived. ["[The library](https://ladonacion.es/biblioteca)"] |
+|                                                     |                                                                                                                             |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <img src="docs/graph.webp" width="280" alt="" />    | 1. **A network of relations between persons or business entities**. ("[Who is who](https://ladonacion.es/entramado)")       |
+| <img src="docs/timeline.webp" width="280" alt="" /> | 2. **A sequential set of events**. ("[The facts](https://ladonacion.es/cronologia)")                                        |
+| <img src="docs/carto.webp" width="280" alt="" />    | 3. **A geographical dimension**. ("[The places](https://ladonacion.es/mapa)")                                               |
+| <img src="docs/docs.webp" width="280" alt="" />     | 4. **A repository of documents** from which the whole story is derived. ("[The library](https://ladonacion.es/biblioteca)") |
 
 # Technical overview
 
