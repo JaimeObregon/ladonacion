@@ -10,6 +10,11 @@ by September 24, 2022._
 
 ---
 
+⭐ **Like it? Then star it on GitHub**. It only costs you a click and it greatly
+helps discoverabilty. ❤️
+
+---
+
 [La donación](https://ladonacion.es) (Spanish for "the donation") is a
 data-driven set of rich interactive visualizations exposing all the known
 details about the donation in 2012 of 65 million euros from the then King of
@@ -32,8 +37,6 @@ code and this documentation are written in English.
 | --------------------- | --------------------------- | ------------------------ |
 | ![](/docs/graph.webp) | ![](/docs/carto.webp)       | ![](/docs/search.webp)   |
 | ![](/docs/docs.webp)  | ![](/docs/methodology.webp) | ![](/docs/timeline.webp) |
-
-### ⭐ **Like it? Then star it on GitHub**. It only costs you a click and it greatly helps its discoverabilty. ❤️
 
 I have gathered all of the data exclusively from public sources. Most of it
 comes from the legal proceedings, mainly in Geneve, Switzerland, leaked to and
@@ -68,12 +71,12 @@ This means **the application can be easily reused and adapted to power other
 stories**. It best fits one which has can be clearly expressed in the following
 four planes:
 
-|                          |                                                                                                                       |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| ![](/docs/graph.webp)    | **A network of relations between persons or business entities**. ["[Who is who](https://ladonacion.es/entramado)"]    |
-| ![](/docs/timeline.webp) | **A sequential set of events**. ["[The facts](https://ladonacion.es/cronologia)"]                                     |
-| ![](/docs/carto.webp)    | **A geographical dimension**. ["[The places](https://ladonacion.es/mapa)"]                                            |
-| ![](/docs/docs.webp)     | **A library of documents** from which the whole story is derived. ["[The library](https://ladonacion.es/biblioteca)"] |
+|                                                     |                                                                                                                          |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| <img src="docs/graph.webp" width="280" alt="" />    | 1. **A network of relations between persons or business entities**. ["[Who is who](https://ladonacion.es/entramado)"]    |
+| <img src="docs/timeline.webp" width="280" alt="" /> | 2. **A sequential set of events**. ["[The facts](https://ladonacion.es/cronologia)"]                                     |
+| <img src="docs/carto.webp" width="280" alt="" />    | 3. **A geographical dimension**. ["[The places](https://ladonacion.es/mapa)"]                                            |
+| <img src="docs/docs.webp" width="280" alt="" />     | 4. **A library of documents** from which the whole story is derived. ["[The library](https://ladonacion.es/biblioteca)"] |
 
 # Technical overview
 
