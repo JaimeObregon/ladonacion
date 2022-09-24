@@ -116,7 +116,7 @@ You surely want to keep the application logic, adapt it's text strings and
 design aesthetics, and ditch the topmost layer to replace it with your own
 datasource.
 
-![](/docs/layers.svg)
+<img src="docs/layers.png" style="display: block; width: 350px; margin: 25px auto;" alt="" />
 
 # Starting up
 
@@ -142,8 +142,8 @@ machine.
    $ npm run dev
    ```
 
-   A new tab should pop up in your browser, serving the app from your local
-   [`httpdocs`](/httpdocs) directory.
+A new tab should pop up in your browser, serving the app from your local
+[`httpdocs`](/httpdocs) directory.
 
 ## Building the data model
 
@@ -162,12 +162,12 @@ This means **the application can be easily reused and adapted to power other
 investigations**. It best fits one which has can be clearly expressed in the
 following four planes:
 
-|                                                     |                                                                                                                             |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <img src="docs/graph.webp" width="280" alt="" />    | 1. **A network of relations between persons or business entities**. ("[Who is who](https://ladonacion.es/entramado)")       |
-| <img src="docs/timeline.webp" width="280" alt="" /> | 2. **A sequential set of events**. ("[The facts](https://ladonacion.es/cronologia)")                                        |
-| <img src="docs/carto.webp" width="280" alt="" />    | 3. **A geographical dimension**. ("[The places](https://ladonacion.es/mapa)")                                               |
-| <img src="docs/docs.webp" width="280" alt="" />     | 4. **A repository of documents** from which the whole story is derived. ("[The library](https://ladonacion.es/biblioteca)") |
+|                                                     |                                                                                                                           |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <img src="docs/graph.webp" width="280" alt="" />    | 1. **A network of relations between persons or business entities**. (The [who is who](https://ladonacion.es/entramado))   |
+| <img src="docs/timeline.webp" width="280" alt="" /> | 2. **A sequential set of events**. ([The facts](https://ladonacion.es/cronologia))                                        |
+| <img src="docs/carto.webp" width="280" alt="" />    | 3. **A geographical dimension**. ([The places](https://ladonacion.es/mapa))                                               |
+| <img src="docs/docs.webp" width="280" alt="" />     | 4. **A repository of documents** from which the whole story is derived. ([The library](https://ladonacion.es/biblioteca)) |
 
 # Technical overview
 
