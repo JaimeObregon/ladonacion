@@ -3,6 +3,13 @@
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 <span class="badge-patreon"><a href="https://patreon.com/jaime_gomez_obregon" title="Apoya este proyecto en Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Botón para donar en Patreon" /></a></span>
 
+---
+
+\_This documentation is a work in progress. I expect to have it finished by
+Monday, 26 September 2022.
+
+---
+
 [La donación](https://ladonacion.es) (Spanish for "the donation") is a
 data-driven set of rich interactive visualizations exposing all the known
 details about the donation in 2012 of 65 million euros from the then King of
@@ -116,7 +123,9 @@ You surely want to keep the application logic, adapt it's text strings and
 design aesthetics, and ditch the topmost layer to replace it with your own
 datasource.
 
-<img src="docs/layers.png" style="display: block; width: 350px; margin: 25px auto;" alt="" />
+<p align="center" style="margin: 1em;">
+  <img src="docs/layers.png" style="width: 480px" alt="" />
+</p>
 
 # Starting up
 
