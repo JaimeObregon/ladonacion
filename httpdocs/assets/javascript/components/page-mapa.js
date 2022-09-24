@@ -127,7 +127,7 @@ customElements.define(
         </div>
         <a
           slot="google_link"
-          href="${place.google.maps}" rel="noreferrer" target="_blank">
+          href="${place.google.link}" rel="noreferrer" target="_blank">
           Abrir en Google Maps
         </a>
 
