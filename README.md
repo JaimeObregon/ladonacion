@@ -5,8 +5,8 @@
 
 ---
 
-\_This documentation is a work in progress. I expect to have it finished by
-Monday, 26 September 2022.
+_This documentation is a work in progress. I expect to have it finished by
+Monday, 26 September 2022._
 
 ---
 
