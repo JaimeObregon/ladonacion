@@ -339,6 +339,7 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC', //para que equipos al oeste de la zona horaria UTC no quiten un día a la fecha, ver https://codefordev.com/discuss/6361936491/tolocaledatestring-is-subtracting-a-day
       }
       if (item.birthdate && item.deathdate) {
         const birth = new Date(item.birthdate)
