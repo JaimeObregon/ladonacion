@@ -198,7 +198,7 @@
   {
     id: 'zarzuela',
     title: 'Palacio de la Zarzuela',
-    description: 'El Palacio de la Zarzuela es la residencia oficial de los reyes de España y de sus familiares directos. Fue el domicilio privado del <a href="#/persons/juan_carlos">rey Juan Carlos</a> por 58 años: dede 1962 hasta su marcha a <a href="#/places/abu_dabi">Abu Dabi</a> en <a href="#/events/marcha_de_espana">agosto de 2020</a>.',
+    description: 'El Palacio de la Zarzuela es la residencia oficial de los reyes de España y de sus familiares directos. Fue el domicilio privado del <a href="#/persons/juan_carlos">rey Juan Carlos</a> por 58 años: desde 1962 hasta su marcha a <a href="#/places/abu_dabi">Abu Dabi</a> en <a href="#/events/marcha_de_espana">agosto de 2020</a>.',
     country: 'es',
     town: 'Madrid',
     zip: '28071',
