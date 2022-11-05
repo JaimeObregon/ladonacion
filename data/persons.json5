@@ -1201,7 +1201,7 @@
     nationality: 'de', // https://find-and-update.company-information.service.gov.uk/officers/Zp-R55jRkX1W5g7vODKSWwbhlKk/appointments
     residence: 'de', // https://find-and-update.company-information.service.gov.uk/officers/Zp-R55jRkX1W5g7vODKSWwbhlKk/appointments
     avatar: 'file:persons/avatars/sascha_kunkel.jpg',
-    description: 'Kunkel es el director ejecutivo de <a href="#/entities/algiz">Algiz Security</a>, la compañía de seguridad contratada por el <a href="#/entities/cni">CNI</a>. Participa en el intercambio de <a href="#/documents/correo_sascha">correos electrónicos de Algiz</a> con <a href="#/persons/corinna">Corrina</a> en abril de 2012, y que tienen lugar inmediatamente después del <a href="#/events/accidente_botsuana">evento de Botsuana</a> y son relativos a la vigilancia de sus oficinas y <a href="#/places/princesse_grace_31">domicilio en Mónaco</a>.',
+    description: 'Kunkel es el director ejecutivo de <a href="#/entities/algiz">Algiz Security</a>, la compañía de seguridad contratada por el <a href="#/entities/cni">CNI</a>. Participa en el intercambio de <a href="#/documents/correo_sascha">correos electrónicos de Algiz</a> con <a href="#/persons/corinna">Corinna</a> en abril de 2012, y que tienen lugar inmediatamente después del <a href="#/events/accidente_botsuana">evento de Botsuana</a> y son relativos a la vigilancia de sus oficinas y <a href="#/places/princesse_grace_31">domicilio en Mónaco</a>.',
     title: 'Sascha Kunkel',
     gender: 'male',
     pictures: [
