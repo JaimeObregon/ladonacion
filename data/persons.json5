@@ -128,7 +128,7 @@
   },
   {
     id: 'francisco_correa',
-    description: 'Es el líder de la trama corrupta conocida como <q>caso Gürtel</q>, motivo por el que fue detenido en 2009 y encarcelado posteriormente. Francisco Correa y su red ocultaban fondos ilícitos en Suiza que eran gestionados por <a href="#/persons/arturo_fasana">Arturo Fasana</a>, investigado también en el procedimiento judicial. Se da la circunstancia de que Fasana admininstraba también el patrimonio en el país helvético del <a href="#/persons/juan_carlos">rey Juan Carlos</a> y de su primo <a href="#/persons/alvaro_de_orleans">Ávaro de Orleans-Borbón</a>.',
+    description: 'Es el líder de la trama corrupta conocida como <q>caso Gürtel</q>, motivo por el que fue detenido en 2009 y encarcelado posteriormente. Francisco Correa y su red ocultaban fondos ilícitos en Suiza que eran gestionados por <a href="#/persons/arturo_fasana">Arturo Fasana</a>, investigado también en el procedimiento judicial. Se da la circunstancia de que Fasana administraba también el patrimonio en el país helvético del <a href="#/persons/juan_carlos">rey Juan Carlos</a> y de su primo <a href="#/persons/alvaro_de_orleans">Ávaro de Orleans-Borbón</a>.',
     avatar: 'file:persons/avatars/francisco_correa.jpg',
     title: 'Francisco Correa Sánchez',
     nationality: 'es',
@@ -394,7 +394,7 @@
     avatar: 'file:persons/avatars/abdala_bin_abdulaziz.jpg',
     title: 'Abdalá bin Abdulaziz',
     alias: 'Rey de Arabia',
-    description: 'Fue rey de <a href="#/places/arabia_saudi">Arabia Saudí</a> desde el 1 de agosto de 2005 hasta su muerte en 2015. En el año 2007 <a href="#/persons/juan_carlos">Juan Carlos</a> le concede la más alta distinción que puede otorgar el rey de España a título personal: <a href="#/events/entrega_toison_de_oro">el Toisón de Oro</a>. Al año siguinte <a href="#/events/lucum_recibe_100_millones">donó 100 millones de dólares</a> al rey de España.',
+    description: 'Fue rey de <a href="#/places/arabia_saudi">Arabia Saudí</a> desde el 1 de agosto de 2005 hasta su muerte en 2015. En el año 2007 <a href="#/persons/juan_carlos">Juan Carlos</a> le concede la más alta distinción que puede otorgar el rey de España a título personal: <a href="#/events/entrega_toison_de_oro">el Toisón de Oro</a>. Al año siguiente <a href="#/events/lucum_recibe_100_millones">donó 100 millones de dólares</a> al rey de España.',
     gender: 'male',
     birthdate: '1924-08-01',
     deathdate: '2015-01-23',
