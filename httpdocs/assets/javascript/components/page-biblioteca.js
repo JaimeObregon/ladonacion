@@ -511,6 +511,7 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       }
 
       const item = this.visible.find((item) => item.id === id)
@@ -623,6 +624,7 @@ customElements.define(
         year: 'numeric',
         month: grid ? '2-digit' : 'long',
         day: grid ? '2-digit' : 'numeric',
+        timeZone: 'UTC',
       }
       const items = []
 

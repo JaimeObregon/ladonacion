@@ -339,6 +339,7 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       }
       if (item.birthdate && item.deathdate) {
         const birth = new Date(item.birthdate)
