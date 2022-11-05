@@ -511,7 +511,7 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
-        timeZone: 'UTC', //en ubicaciones al oeste del UTC sin esta opción la fecha aparece un día antes de la registrada
+        timeZone: 'UTC',
       }
 
       const item = this.visible.find((item) => item.id === id)
@@ -624,7 +624,7 @@ customElements.define(
         year: 'numeric',
         month: grid ? '2-digit' : 'long',
         day: grid ? '2-digit' : 'numeric',
-        timeZone: 'UTC', //en ubicaciones al oeste del UTC sin esta opción la fecha aparece un día antes de la registrada
+        timeZone: 'UTC',
       }
       const items = []
 

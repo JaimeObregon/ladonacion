@@ -412,6 +412,7 @@ customElements.define(
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+        timeZone: 'UTC',
       })
       return text.charAt(0).toUpperCase() + text.slice(1)
     }
@@ -580,6 +581,7 @@ customElements.define(
                 ${new Date(item.date).toLocaleDateString('es-ES', {
                   month: 'long',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </time>
               ${components[item.model]()}
