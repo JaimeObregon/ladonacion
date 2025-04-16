@@ -185,7 +185,7 @@ such as React, Vue or Angular, and in the absence of transpilers such as Babel
 and complex build processes.
 
 The _Who is who_ dynamic graph is built upon Mike Bostock's excelent
-[D3](https://d3js.org) charting library. The rest of the site if manually
+[D3](https://d3js.org) charting library. The rest of the site is manually
 crafted.
 
 # Deployment
